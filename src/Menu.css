@@ -1,0 +1,347 @@
+
+.lotus-menu-page {
+  --cream: #faf7f0;
+  --coffee: #30251f;
+  --brown: #8b5e3c;
+  --sage: #879477;
+  --muted: #796d63;
+  --white: #ffffff;
+
+  background: var(--cream);
+  color: var(--coffee);
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.lotus-menu-page * {
+  box-sizing: border-box;
+}
+
+.lotus-menu-page a {
+  text-decoration: none;
+}
+
+.lotus-menu-page img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* NAVIGATION */
+
+.menu-nav {
+  min-height: 85px;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  background: #faf7f0;
+}
+
+.menu-logo {
+  color: #30251f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.menu-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-nav-links a {
+  color: #796d63;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.menu-nav-links a:hover {
+  color: #8b5e3c;
+}
+
+/* HERO */
+
+.menu-hero {
+  min-height: 390px;
+  padding: 75px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #eee8dc;
+}
+
+.menu-hero-content {
+  max-width: 760px;
+}
+
+.menu-eyebrow {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--sage);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.menu-hero h1 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.menu-hero h1 em {
+  color: var(--brown);
+  font-weight: 400;
+}
+
+.menu-hero p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* MENU INTRODUCTION */
+
+.menu-intro {
+  padding: 75px 7% 30px;
+  text-align: center;
+}
+
+.menu-intro h2 {
+  margin-bottom: 15px;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 500;
+}
+
+.menu-intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* MENU COLLECTION */
+
+.menu-collection {
+  padding: 40px 7% 100px;
+}
+
+.menu-section-heading {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.menu-section-heading h2 {
+  margin-bottom: 12px;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.menu-section-heading p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.menu-card {
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid #eee6dc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(48, 37, 31, 0.09);
+}
+
+.menu-card-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.menu-card-image img {
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-card-image img {
+  transform: scale(1.04);
+}
+
+.menu-card-content {
+  padding: 24px;
+}
+
+.menu-card h3 {
+  margin-bottom: 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.menu-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.menu-card-price {
+  display: block;
+  margin-top: 18px;
+  color: var(--brown);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* CLOSING BANNER */
+
+.menu-closing {
+  padding: 75px 7%;
+  background: var(--sage);
+  color: var(--white);
+  text-align: center;
+}
+
+.menu-closing h2 {
+  margin-bottom: 18px;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 500;
+}
+
+.menu-closing p {
+  max-width: 550px;
+  margin: 0 auto 28px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.menu-closing-button {
+  display: inline-block;
+  padding: 15px 28px;
+  background: var(--cream);
+  color: var(--coffee);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.menu-closing-button:hover {
+  background: var(--coffee);
+  color: var(--white);
+}
+
+/* FOOTER */
+
+.menu-footer {
+  padding: 45px 7% 20px;
+  background: var(--coffee);
+  color: var(--cream);
+}
+
+.menu-footer-logo {
+  display: block;
+  margin-bottom: 22px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 28px;
+  color: #b9aca0;
+}
+
+.menu-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.menu-footer-links a {
+  color: #d4c8bc;
+  font-size: 12px;
+}
+
+.menu-footer-links a:hover {
+  color: var(--white);
+}
+
+.menu-footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: #b9aca0;
+  font-size: 11px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-card-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu-nav {
+    padding: 20px 5%;
+    flex-direction: column;
+  }
+
+  .menu-logo {
+    font-size: 27px;
+  }
+
+  .menu-nav-links {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .menu-hero {
+    min-height: 330px;
+    padding: 55px 6%;
+  }
+
+  .menu-collection {
+    padding: 35px 6% 65px;
+  }
+
+  .menu-intro {
+    padding: 55px 6% 25px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .menu-card-image {
+    height: 260px;
+  }
+
+  .menu-closing {
+    padding: 60px 6%;
+  }
+
+  .menu-footer {
+    padding: 40px 6% 20px;
+  }
+}
